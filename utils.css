@@ -1,0 +1,33 @@
+.mw-800 {
+  max-width: 900px;
+}
+
+.text-bold {
+  font-weight: 500;
+}
+
+.mark {
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
