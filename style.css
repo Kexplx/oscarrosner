@@ -73,6 +73,6 @@ footer {
   border-top: 1px solid var(--border);
   font-size: 0.8rem;
   display: grid;
+  justify-items: center;
   align-items: center;
-  justify-content: center;
 }
