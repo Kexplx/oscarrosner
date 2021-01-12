@@ -2,7 +2,6 @@ body,
 html {
   margin: 0;
   padding: 0;
-  height: 100%;
 
   --border: #d3d3d3;
   --bg-color: #24292e;
@@ -67,14 +66,4 @@ p {
 
 .header__body__gh-icon:hover {
   color: var(--link-hover-fg-color);
-}
-
-footer {
-  border-top: 1px solid var(--border);
-  font-size: 0.8rem;
-  display: grid;
-  justify-items: center;
-  height: 40px;
-  margin-top: 100px;
-  align-items: center;
 }
