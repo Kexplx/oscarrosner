@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap");
 
 body,
 html {
@@ -11,7 +11,7 @@ html {
   --link-fg-color: #0652dd;
   --link-hover-fg-color: #3d7ffa;
 
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
   color: var(--fg-color);
 }
 
