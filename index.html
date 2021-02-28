@@ -15,6 +15,7 @@
     ></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="utils.css" />
+    <script src="app.js" defer></script>
     <title>Oscar Rosner | Portfolio</title>
   </head>
   <body>
@@ -30,105 +31,129 @@
       </div>
     </header>
     <div class="section-body mw-800 m-auto pl-10 pr-10">
-      <section>
+      <section style="position: relative">
+        <i
+          id="caretWelcome"
+          style="position: absolute; left: -50px; top: 10px; font-size: 1.2rem"
+          class="fas fa-caret-down"
+        ></i>
         <h1>
-          <span class="mark"
-            >Welcome on <span class="fw-500">my website!</span></span
-          >
+          <span class="mark">Welcome on my website!</span>
         </h1>
-        <p>
-          I'm a 24 year old computer science master student from Germany.
-          Currently, I'm enrolled in my third and <i>(hopefully)</i>
-          penultimate semester at
-          <a href="https://fau.de" target="_blank">FAU Erlangen Nuremberg</a>.
-        </p>
-        <p>
-          I made this site to give potential employers and collaborators a first
-          impression of me as a developer. If you have questions regarding the
-          projects or my studies, feel free to contact me here:
-          <a href="mailto:oscar.rosner@web.de">oscar.rosner@web.de</a>.
-        </p>
+        <div id="sectionWelcome">
+          <p>
+            I'm a 24 year old computer science master student from Germany.
+            Currently, I'm enrolled in my last semester at
+            <a href="https://fau.de" target="_blank">FAU Erlangen Nuremberg</a>.
+          </p>
+          <p>
+            I built this site to give potential employers and collaborators a
+            first impression of me as a developer. If you have questions
+            regarding the projects or my studies, feel free to contact me here:
+            <a href="mailto:oscar.rosner@web.de">oscar.rosner@web.de</a>.
+          </p>
+        </div>
       </section>
 
-      <section class="mt-50">
+      <section style="position: relative">
         <h2>
           <span class="mark"
-            ><span class="fw-500">Technologies</span> I focus on:
+            >Technologies I focus on (
             <i style="color: #c3002f" class="fab fa-angular"></i>
-            <i style="color: #3fb27f" class="fab fa-vuejs"></i>
-            <i class="fab fa-node"></i>
+            <i style="color: #61dafb" class="fab fa-react"></i>
+            <img style="width: 20px" src="search.svg" alt="Google" />
+            <i class="fab fa-node"></i>)
           </span>
         </h2>
-        <p>
-          I enjoy building software for the web. The main reason is the openness
-          of the plattform. There's no app-store and no manual installation
-          required to share my work - a link is enough.
-        </p>
-        <p>
-          My focus lies on front-end web development. I have a good knowledge of
-          the core technologies and concepts that make up the JS frameworks
-          <span class="text-bold">Angular</span> and
-          <span class="text-bold">Vue</span>. In order to build feature-rich
-          applications, having only client-side code normally isn't enough.
-          Therefore, I also have decent knowledge in building Rest API's with
-          <span class="text-bold">Express</span>.
-        </p>
-        <p>
-          Over the years I have worked with many more languages and frameworks
-          (C#, Java, PHP and Python). I enjoy using these technologies but I
-          don't really focus on them.
-        </p>
+        <i
+          id="caretTechnologies"
+          style="position: absolute; left: -50px; top: 5px; font-size: 1.2rem"
+          class="fas fa-caret-down"
+        ></i>
+        <div id="sectionTechnologies">
+          <p>
+            I enjoy building software for the web. The main reason is the
+            openness of the plattform. There's no app-store and no manual
+            installation required to share my work - a link is enough.
+          </p>
+          <p>
+            My focus lies on front-end web development. I have a good knowledge
+            of the core technologies and concepts that make up the JS frameworks
+            <span class="text-bold">Angular</span> and
+            <span class="text-bold">React</span>. In order to build feature-rich
+            applications, having only client-side code normally isn't enough.
+            Therefore, I also have decent knowledge in building Rest API's with
+            <span class="text-bold">Express</span>.
+          </p>
+          <p>
+            Over the years I have worked with many more languages and frameworks
+            (C# .NET, Spring Boot and PHP Laravel). I enjoyed these technologies
+            but I don't focus on them.
+          </p>
+        </div>
       </section>
 
-      <section class="mt-50">
+      <section style="position: relative">
         <h2>
           <span class="mark"><span class="fw-500">Projects</span></span>
         </h2>
-        <section>
-          <h3>CrimeView</h3>
-          <p>
-            A web app which analyses a route based on a Polygon, Line or Radius
-            for 1 - 3 german cities and displays all districts (de: Stadt-
-            Landkreise) with their respective crime rate (# of offences per
-            100.000 inhabitants) on it.
-          </p>
-          <p>CrimeView combines data from three different sources:</p>
-          <ul>
-            <li>Opendatasoft - Geojson of districts</li>
-            <li>Google Places - City predictions and details</li>
-            <li>AWS Lambda - Crime statistics</li>
-          </ul>
-          <p>
-            <a href="https://kexplx.github.io/crimeview/" target="_blank"
-              >Live</a
-            >
-            |
-            <a href="https://github.com/kexplx/crimeview" target="_blank"
-              >GitHub</a
-            >
-          </p>
-        </section>
+        <i
+          id="caretProjects"
+          style="position: absolute; left: -50px; top: 5px; font-size: 1.2rem"
+          class="fas fa-caret-right"
+        ></i>
+        <div id="sectionProjects" class="collapsed">
+          <section class="card">
+            <h4>CrimeView</h4>
+            <p>
+              A web app which analyses a route based on a Polygon, Line or
+              Radius for 1 - 3 german cities and displays all districts (de:
+              Stadt- Landkreise) with their respective crime rate (# of offences
+              per 100.000 inhabitants) on it.
+            </p>
+            <p>CrimeView combines data from three different sources:</p>
+            <ul>
+              <li>Opendatasoft - Geojson of districts</li>
+              <li>Google Places - City predictions and details</li>
+              <li>AWS Lambda - Crime statistics</li>
+            </ul>
+            <p>
+              <a href="https://kexplx.github.io/crimeview/" target="_blank"
+                >Live</a
+              >
+              |
+              <a href="https://github.com/kexplx/crimeview" target="_blank"
+                >GitHub</a
+              >
+            </p>
+          </section>
 
-        <section class="mt-50">
-          <h3>Scrapestar ⭐</h3>
-          <p>
-            HTML scraping made easy. Scrapestar allows a user to schedule jobs
-            that scrape webpages based on CSS selectors. The results are made
-            available through a REST API.
-          </p>
-          <p>
-            <a
-              href="https://www.youtube.com/watch?v=V1UMi-HkJvI"
-              target="_blank"
-              >Demo Video</a
-            >
-            |
-            <a href="https://github.com/kexplx/scrapestar" target="_blank"
-              >GitHub</a
-            >
-          </p>
-        </section>
+          <section class="card mt-2">
+            <h4>Scrapestar ⭐</h4>
+            <p>
+              HTML scraping made easy. Scrapestar allows a user to schedule jobs
+              that scrape webpages based on CSS selectors. The results are made
+              available through a REST API.
+            </p>
+            <p>
+              <a
+                href="https://www.youtube.com/watch?v=V1UMi-HkJvI"
+                target="_blank"
+                >Demo Video</a
+              >
+              |
+              <a href="https://github.com/kexplx/scrapestar" target="_blank"
+                >GitHub</a
+              >
+            </p>
+          </section>
+        </div>
       </section>
+
+      <div style="text-align: end; margin-bottom: 100px">
+        <hr style="margin-bottom: 5px" />
+        <span> 28.02.2021, Erlangen </span>
+      </div>
     </div>
   </body>
 </html>

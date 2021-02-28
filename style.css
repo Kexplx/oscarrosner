@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap");
+
 body,
 html {
   margin: 0;
@@ -9,22 +11,13 @@ html {
   --fg-hover-color: #333b42;
   --link-fg-color: #0652dd;
   --link-hover-fg-color: #3d7ffa;
-}
 
-body {
-  font-family: "Roboto", sans-serif;
-  color: var(--fg-color);
-
-  display: grid;
-  grid-template-rows: 50px 1fr 50px;
-  gap: 0;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 h1,
-h2,
-h3,
-h4 {
-  font-weight: 400;
+h2 {
+  font-weight: 500;
 }
 
 h1 {
@@ -53,9 +46,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
-
-  font-weight: 400;
+  padding: 5px;
 }
 
 .header__body__gh-icon {

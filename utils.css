@@ -3,7 +3,8 @@
 }
 
 .text-bold {
-  font-weight: 500;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 .mark {
@@ -13,15 +14,23 @@
 }
 
 .fw-500 {
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .mt-50 {
   margin-top: 50px;
 }
 
+.mb-50 {
+  margin-bottom: 50px;
+}
+
 .m-auto {
   margin: auto;
+}
+
+.mt-2 {
+  margin-top: 20px;
 }
 
 .pr-10 {
@@ -30,4 +39,25 @@
 
 .pl-10 {
   padding-left: 10px;
+}
+
+.grid-2-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  border: 1px dashed lightgray;
+  padding: 0px 20px;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px dashed black;
+  margin: 50px 0;
+}
+
+.collapsed {
+  display: none;
 }
