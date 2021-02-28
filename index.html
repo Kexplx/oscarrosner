@@ -9,10 +9,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/cf928e8e7e.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="utils.css" />
     <script src="app.js" defer></script>
@@ -20,25 +16,28 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__body pl-10 pr-10 mw-800 m-auto">
+      <div class="header__body pl-10 pr-10 mw-900 m-auto">
         <span>Oscar Rosner | Portfolio</span>
         <span class="spacer"></span>
         <a href="https://github.com/kexplx" target="_blank">
-          <span class="header__body__gh-icon">
-            <i class="fab fa-github"></i>
-          </span>
+          <img
+            style="width: 25px; vertical-align: middle"
+            src="github-square-brands.svg"
+            alt="GitHub"
+          />
         </a>
       </div>
     </header>
-    <div class="section-body mw-800 m-auto pl-10 pr-10">
-      <section style="position: relative">
-        <i
-          id="caretWelcome"
-          style="position: absolute; left: -50px; top: 10px; font-size: 1.2rem"
-          class="fas fa-caret-down"
-        ></i>
+    <div class="section-body mw-900 m-auto pl-10 pr-10">
+      <section>
         <h1>
-          <span class="mark">Welcome on my website!</span>
+          <img
+            id="caretWelcome"
+            class="caret"
+            src="caret-down-solid.svg"
+            alt="Angular"
+          />
+          <span class="mark">Welcome on my website 👋</span>
         </h1>
         <div id="sectionWelcome">
           <p>
@@ -55,21 +54,40 @@
         </div>
       </section>
 
-      <section style="position: relative">
+      <section>
         <h2>
+          <img
+            id="caretTechnologies"
+            class="caret"
+            src="caret-down-solid.svg"
+            alt="Angular"
+          />
           <span class="mark"
             >Technologies I focus on (
-            <i style="color: #c3002f" class="fab fa-angular"></i>
-            <i style="color: #61dafb" class="fab fa-react"></i>
-            <img style="width: 20px" src="search.svg" alt="Google" />
-            <i class="fab fa-node"></i>)
+            <img
+              style="width: 20px; vertical-align: middle"
+              src="angular-brands.svg"
+              alt="Angular"
+            />
+            <img
+              style="width: 20px; vertical-align: middle"
+              src="react-brands.svg"
+              alt="React"
+            />
+            <img
+              style="width: 20px; vertical-align: middle"
+              src="node-brands.svg"
+              alt="NodeJS"
+            />
+            <img
+              style="width: 20px; vertical-align: middle"
+              src="cloud-solid.svg"
+              alt="Google"
+            />
+            )
           </span>
         </h2>
-        <i
-          id="caretTechnologies"
-          style="position: absolute; left: -50px; top: 5px; font-size: 1.2rem"
-          class="fas fa-caret-down"
-        ></i>
+
         <div id="sectionTechnologies">
           <p>
             I enjoy building software for the web. The main reason is the
@@ -93,15 +111,17 @@
         </div>
       </section>
 
-      <section style="position: relative">
+      <section>
         <h2>
+          <img
+            id="caretProjects"
+            class="caret"
+            src="caret-right-solid.svg"
+            alt="Angular"
+          />
           <span class="mark"><span class="fw-500">Projects</span></span>
         </h2>
-        <i
-          id="caretProjects"
-          style="position: absolute; left: -50px; top: 5px; font-size: 1.2rem"
-          class="fas fa-caret-right"
-        ></i>
+
         <div id="sectionProjects" class="collapsed">
           <section class="card">
             <h4>CrimeView</h4>
@@ -142,9 +162,6 @@
                 >Demo Video</a
               >
               |
-              <a href="https://github.com/kexplx/scrapestar" target="_blank"
-                >GitHub</a
-              >
             </p>
           </section>
         </div>
@@ -152,7 +169,8 @@
 
       <div style="text-align: end; margin-bottom: 100px">
         <hr style="margin-bottom: 5px" />
-        <span> 28.02.2021, Erlangen </span>
+        Hosted on
+        <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
       </div>
     </div>
   </body>

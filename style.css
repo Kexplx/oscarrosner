@@ -5,14 +5,14 @@ html {
   margin: 0;
   padding: 0;
 
-  --border: #d3d3d3;
+  --border: #949494;
   --bg-color: #24292e;
   --fg-color: #24292e;
-  --fg-hover-color: #333b42;
   --link-fg-color: #0652dd;
   --link-hover-fg-color: #3d7ffa;
 
   font-family: "Nunito Sans", sans-serif;
+  color: var(--fg-color);
 }
 
 h1,
@@ -38,8 +38,9 @@ p {
 }
 
 .header {
-  border-bottom: 1px solid var(--border);
-  border-top: 5px solid var(--bg-color);
+  border-bottom: 1px dashed var(--border);
+  border-top: 7px solid var(--bg-color);
+  padding: 10px;
 }
 
 .header__body {
@@ -49,12 +50,10 @@ p {
   padding: 5px;
 }
 
-.header__body__gh-icon {
-  font-size: 1.5rem;
-  color: var(--fg-color);
-  transition: transform 0.2s ease-in-out;
-}
-
-.header__body__gh-icon:hover {
-  color: var(--link-hover-fg-color);
+.caret {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  cursor: pointer;
+  padding: 10px;
 }

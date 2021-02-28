@@ -1,4 +1,4 @@
-.mw-800 {
+.mw-900 {
   max-width: 900px;
 }
 
@@ -54,7 +54,7 @@
 
 hr {
   border: none;
-  border-bottom: 1px dashed black;
+  border-bottom: 1px dashed var(--border);
   margin: 50px 0;
 }
 

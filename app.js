@@ -23,13 +23,11 @@ function handleCollapseClick(caret, elementToCollapse) {
 
   if (isCollapsed) {
     elementToCollapse.classList.remove("collapsed");
-    caret.classList.add("fa-caret-down");
-    caret.classList.remove("fa-caret-right");
+    caret.setAttribute("src", "./caret-down-solid.svg");
 
     return;
   }
 
   elementToCollapse.classList.add("collapsed");
-  caret.classList.add("fa-caret-right");
-  caret.classList.remove("fa-caret-up");
+  caret.setAttribute("src", "./caret-right-solid.svg");
 }
