@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700&display=swap");
+
 body,
 html {
   margin: 0;
@@ -9,7 +11,7 @@ html {
   --link-fg-color: #0652dd;
   --link-hover-fg-color: #3d7ffa;
 
-  font-family: "Trebuchet MS", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   color: var(--fg-color);
 }
 
