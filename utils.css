@@ -1,64 +1,36 @@
 .mw-900 {
   max-width: 900px;
 }
-
-.text-bold {
-  font-weight: 600;
-  text-decoration: underline;
-}
-
 .mark {
   background-color: #f6f6f6;
   border-radius: 5px;
   padding: 5px;
 }
-
 .fw-500 {
   font-weight: 300;
 }
-
-.mt-50 {
-  margin-top: 50px;
-}
-
-.mb-50 {
-  margin-bottom: 50px;
-}
-
 .m-auto {
   margin: auto;
 }
-
 .mt-2 {
   margin-top: 20px;
 }
-
 .pr-10 {
   padding-right: 10px;
 }
-
 .pl-10 {
   padding-left: 10px;
 }
-
-.grid-2-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
 .card {
   padding: 5px 20px 5px 20px;
-  background-color: rgb(250, 250, 250);
+  background-color: #fafafa;
   border-radius: 5px;
 }
-
 hr {
   border: none;
   border-bottom: 1px dashed var(--border);
   margin: 50px 0;
 }
-
 .collapsed {
   display: none;
 }
