@@ -31,7 +31,7 @@ p {
 }
 .header {
   border-bottom: 1px dashed var(--border);
-  border-top: 7px solid var(--bg-color);
+  border-top: 3px solid var(--bg-color);
   padding: 10px;
 }
 .header__body {
