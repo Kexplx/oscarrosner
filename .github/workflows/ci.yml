@@ -12,8 +12,8 @@ jobs:
         with:
           node-version: '12'
       
-      - name: Install NPM packages
-	      run: npm install
+      - name: Install npm packages
+        run: npm i
       
       - name: Minify content in /src and move result to /dist
 	      run: npm run minify
