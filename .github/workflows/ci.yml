@@ -9,11 +9,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: Install npm packages
-        run: npm install
+      - name: Install NPM packages
+	run: npm install
       
-      - name: Minify the content of /src and move the result into /dist
-        run: npm run minify
+      - name: Copy index.html to /dist
+        run: cp index.html dist/
+      
+      - name: Minify HTML
+        
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.4.9
