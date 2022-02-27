@@ -1,0 +1,16 @@
+{
+  "name": "oscarrosner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "html-minifier": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "minify": "html-minifier --input-dir src --output-dir dist --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
