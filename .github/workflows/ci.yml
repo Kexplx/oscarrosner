@@ -1,0 +1,23 @@
+name: CI Master
+on:
+  push:
+    branches:
+      - master
+jobs:
+  ubuntu-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Install npm packages
+        run: npm install
+      
+      - name: Minify the content of /src and move the result into /dist
+        run: npm run minify
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.4.9
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: dist
