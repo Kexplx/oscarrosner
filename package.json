@@ -8,7 +8,7 @@
     "html-minifier-terser": "^7.0.0-alpha.1"
   },
   "scripts": {
-    "build:prod": "node minify.js"
+    "build:prod": "node build.js"
   },
   "keywords": [],
   "author": "",
