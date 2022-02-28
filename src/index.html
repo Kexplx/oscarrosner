@@ -18,6 +18,7 @@
     <style>
       body {
         font-family: "Source Sans Pro", sans-serif;
+        scroll-behavior: smooth;
       }
 
       h1 {
@@ -41,7 +42,7 @@
 
       a:hover {
         cursor: pointer;
-        color: rgba(0, 0, 255, 0.8);
+        opacity: 0.9;
       }
 
       .bg-blue,
@@ -111,6 +112,27 @@
         font-weight: 600;
         font-size: 1.1rem;
       }
+
+      #btnScrollUp {
+        position: fixed;
+        right: 25px;
+        bottom: 25px;
+        padding: 5px 10px;
+        display: none;
+        border-radius: 50%;
+        border: none;
+        box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
+          rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+      }
+
+      #btnScrollUp:hover {
+        cursor: pointer;
+      }
+
+      #btnScrollUp img {
+        vertical-align: middle;
+        width: 25px;
+      }
     </style>
   </head>
   <body>
@@ -130,7 +152,7 @@
         <p class="ta-justify">
           My name is <strong>Oscar Rosner</strong>, I'm a 25-year-old Computer
           Science student from Germany who's currently enrolled in his last
-          semester at the
+          semester at
           <a
             href="https://en.wikipedia.org/wiki/University_of_Erlangen%E2%80%93Nuremberg"
             >FAU Erlangen-Nürnberg</a
@@ -138,6 +160,16 @@
           freetime over the last few months and years. If you have any questions
           about the projects or my studies, feel free to reach out at
           <a href="mailto:oscar.rosner@web.de">oscar.rosner@web.de</a>.
+        </p>
+        <p>
+          <a href="pdf/rosner_cv_de.pdf" download>
+            <img
+              src="img/cloud-arrow-down-solid.svg"
+              style="width: 15px; vertical-align: bottom; margin-right: 5px"
+              alt="Download File"
+            />
+            Download my CV (german)</a
+          >
         </p>
 
         <!-- Section: Master Thesis -->
@@ -196,7 +228,7 @@
         <p>
           <strong>Name: </strong> Oscar Rosner <br />
           <strong>Bio: </strong> 25 years old, studying computer science (M.Sc.)
-          @
+          at
           <a
             href="https://en.wikipedia.org/wiki/University_of_Erlangen%E2%80%93Nuremberg"
             >FAU Erlangen-Nürnberg</a
@@ -204,6 +236,17 @@
           <br />
           <strong>Contact: </strong>
           <a href="mailto:oscar.rosner@web.de">oscar.rosner@web.de</a> <br />
+        </p>
+
+        <p>
+          <a href="pdf/rosner_cv_de.pdf" download>
+            <img
+              src="img/cloud-arrow-down-solid.svg"
+              style="width: 15px; vertical-align: bottom; margin-right: 5px"
+              alt="Download File"
+            />
+            Download my CV (german)</a
+          >
         </p>
 
         <!-- Section: Master Thesis (Condensed) -->
@@ -360,6 +403,10 @@
         </p>
         <p><a href="https://kexplx.github.io/rats-alive/">Live Version</a></p>
       </div>
+
+      <button id="btnScrollUp">
+        <img src="img/angle-up-solid.svg" alt="Scroll to Top" />
+      </button>
     </div>
 
     <script>
@@ -387,6 +434,23 @@
         const queryParams = new URLSearchParams(location.search);
         return queryParams.get("condensedView");
       }
+
+      // Scroll to top button.
+      const scrollUpBtn = document.getElementById("btnScrollUp");
+
+      window.onscroll = () => {
+        const hasScrolledFarEnough = window.scrollY > 200;
+
+        if (hasScrolledFarEnough) {
+          scrollUpBtn.style.display = "block";
+        } else {
+          scrollUpBtn.style.display = "none";
+        }
+      };
+
+      scrollUpBtn.onclick = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
     </script>
   </body>
 </html>
