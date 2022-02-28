@@ -10,13 +10,13 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: "12"
+          node-version: "14"
 
       - name: Install npm packages
         run: npm i
 
-      - name: Minify content in /src and move result to /dist
-        run: npm run minify
+      - name: Build
+        run: npm run build:prod
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.4.9
