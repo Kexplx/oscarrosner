@@ -137,6 +137,21 @@
         vertical-align: middle;
         width: 20px;
       }
+
+      #btnShowVideo {
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
+          rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+          font-weight: 600;
+          font-size: .8rem;
+      }
+
+      #btnShowVideo:hover {
+        opacity: .9;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
@@ -180,9 +195,16 @@
             href="https://oss.cs.fau.de/wp-content/uploads/2021/10/rosner_2021.pdf"
             >here</a
           >
-          or watch my thesis defense below:
+          or watch an offline version of my defense below:
         </p>
-        <video width="100%" controls src="video/defense.mp4"></video>
+
+        <p class="ta-center">
+          <button id="btnShowVideo">
+            <img style="width: 20px; vertical-align: sub; margin-right: 5px;" src="img/video-solid.svg" alt="Video">
+            Play Video
+          </button>
+        </p>
+        <video id="video" style="display: none;" width="100%" controls src="video/defense.mp4"></video>
 
         <!-- Section: Tech Stack -->
         <h2 class="mt-3">
@@ -425,6 +447,15 @@
       scrollUpBtn.onclick = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
       };
+
+      // Show video (defense)
+      const videoEl = document.getElementById('video');
+      const btnShowVideo = document.getElementById('btnShowVideo');
+
+      btnShowVideo.onclick = () => {
+        videoEl.style.display = 'block';
+        btnShowVideo.style.display = 'none'
+      }
     </script>
   </body>
 </html>
