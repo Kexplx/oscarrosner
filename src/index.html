@@ -144,12 +144,12 @@
         border-radius: 5px;
         box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
           rgb(0 0 0 / 30%) 0px 1px 3px -1px;
-          font-weight: 600;
-          font-size: .8rem;
+        font-weight: 600;
+        font-size: 0.8rem;
       }
 
       #btnShowVideo:hover {
-        opacity: .9;
+        opacity: 0.9;
         cursor: pointer;
       }
     </style>
@@ -179,7 +179,7 @@
           freetime over the last few months and years. If you have any questions
           about the projects or my studies, feel free to reach out at
           <a href="mailto:oscar.rosner@web.de">oscar.rosner@web.de</a>.
-        </p
+        </p>
 
         <!-- Section: Master Thesis -->
         <h2 class="mt-3">
@@ -200,11 +200,21 @@
 
         <p class="ta-center">
           <button id="btnShowVideo">
-            <img style="width: 20px; vertical-align: sub; margin-right: 5px;" src="img/video-solid.svg" alt="Video">
+            <img
+              style="width: 20px; vertical-align: sub; margin-right: 5px"
+              src="img/video-solid.svg"
+              alt="Video"
+            />
             Play Video
           </button>
         </p>
-        <video id="video" style="display: none;" width="100%" controls src="video/defense.mp4"></video>
+        <video
+          id="video"
+          style="display: none"
+          width="100%"
+          controls
+          src="video/defense.mp4"
+        ></video>
 
         <!-- Section: Tech Stack -->
         <h2 class="mt-3">
@@ -279,7 +289,7 @@
       </section>
 
       <!-- Section: Projects -->
-      <h2 class="mt-3">
+      <h2 id="projects" class="mt-3">
         <span class="bg-gray box-shadow">Projects</span>
       </h2>
 
@@ -449,13 +459,13 @@
       };
 
       // Show video (defense)
-      const videoEl = document.getElementById('video');
-      const btnShowVideo = document.getElementById('btnShowVideo');
+      const videoEl = document.getElementById("video");
+      const btnShowVideo = document.getElementById("btnShowVideo");
 
       btnShowVideo.onclick = () => {
-        videoEl.style.display = 'block';
-        btnShowVideo.style.display = 'none'
-      }
+        videoEl.style.display = "block";
+        btnShowVideo.style.display = "none";
+      };
     </script>
   </body>
 </html>
