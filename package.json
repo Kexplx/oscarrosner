@@ -2,15 +2,11 @@
   "name": "oscarrosner",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "devDependencies": {
-    "fs-extra": "^10.0.1",
-    "html-minifier-terser": "^7.0.0-alpha.1"
-  },
-  "scripts": {
-    "build:prod": "node build.js"
+    "clean-css-cli": "^5.6.3",
+    "html-minifier": "^4.0.0"
   },
   "keywords": [],
-  "author": "",
+  "author": "Oscar Rosner",
   "license": "ISC"
 }

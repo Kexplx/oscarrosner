@@ -7,19 +7,23 @@ jobs:
   ubuntu-build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: "14"
+          node-version: 18
 
-      - name: Install npm packages
-        run: npm i
+      - name: Install Dependencies
+        run: npm install
 
       - name: Build
-        run: npm run build:prod
+        run: |
+          mkdir -p dist
+          npx html-minifier --collapse-whitespace --remove-comments --minify-js true --minify-css true -o dist/index.html src/index.html
+          npx cleancss -o dist/styles.css src/styles.css
+          cp -r src/assets dist/
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@3.4.9
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
