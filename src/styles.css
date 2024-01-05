@@ -1,7 +1,6 @@
 body {
-  font-family: "Rubik";
-  background-color: #fff;
-  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.8;
   margin: 0;
   padding: 0;
   color: #2c3e50;
@@ -42,12 +41,16 @@ footer {
 }
 
 h1 {
-  font-weight: 900;
+  font-weight: 500;
   margin-bottom: 0.5em;
 }
 
+strong {
+  font-weight: 500;
+}
+
 h2 {
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 0.2em;
 }
 
